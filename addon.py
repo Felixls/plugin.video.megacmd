@@ -30,7 +30,7 @@ def index(path='/'):
         else:
             item["path"] = file_info["url"]
 
-        xbmc.log(file_info["path"], xbmc.LOGERROR)
+        xbmc.log(file_info["path"])
         items.append(item)
 
     return items

@@ -44,7 +44,7 @@ def list_files(megapath="."):
 
 
 def webdav_url(megapath="."):
-    output = get_output(["webdav", megapath])
+    output = get_output(["ftp", megapath])
     raw_url = output[0]
-    url = raw_url[raw_url.find('http://'):]
+    url = raw_url[raw_url.find('ftp://'):]
     return url
